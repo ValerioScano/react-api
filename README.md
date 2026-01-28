@@ -1,16 +1,30 @@
-# React + Vite
+ESERCIZIO
+E’ arrivato il momento di mettere insieme i concetti appresi creiamo una piccola app che ci mostri un elenco di attori o attrici.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Usate UNO di questi due endpoint, a piacimento:
+Lista di Attrici:   https://lanciweb.github.io/demo/api/actresses/
+Lista di Attori:  https://lanciweb.github.io/demo/api/actors/
 
-Currently, two official plugins are available:
+MILESTONE 1
+Al caricamento dell'applicazione, recuperiamo la lista degli attori e delle attrici dalle API e stampiamoli in console.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+MILESTONE 2
+Mostriamo le seguenti informazioni in pagina, in un contenitore "alla brutta" (es. div, ul ecc..) senza CSS:
+nome
+anno nascita
+nazionalità
+biografia
+immagine
+riconoscimenti
 
-## React Compiler
+MILESTONE 3
+Possiamo sistemare i nostri contenitori e renderli delle card con del CSS e stile a piacimento!
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+BONUS 1 ☺️
+Stampare sia una lista delle attrici che degli attori, separatamente.
 
-## Expanding the ESLint configuration
+BONUS 2 😎
+Stampare un’unica lista che contiene attori e attrici insieme!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+BONUS 3 🤯
+Aggiungere nella card dell’attore/attrice i film più famosi
