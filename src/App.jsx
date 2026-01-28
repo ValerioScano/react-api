@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useEffect } from 'react'
-import './App.css'
+import style from "./App.module.css"
 import axios from "axios"
 
 const apiUrl = "https://lanciweb.github.io/demo/api/actresses/"
@@ -24,9 +24,19 @@ function App() {
   return (
     <>
       <h1>Il mio progetto</h1>
-      {actressList.map((actress) => {
-        return <div key={actress.id}>{actress.name}, {actress.birth_year}, {actress.nationality}</div>
-      })}
+      <div className={style.flexcontainer}>
+        {actressList.map((actress) => {
+          return <>
+
+            <div key={actress.id} className={style.card}>
+              <img src={actress.image} alt={`${actress.name} image`} />
+              {actress.name}, {actress.birth_year}, {actress.nationality}
+            </div>
+
+          </>
+        })}
+      </div>
+
     </>
   )
 }

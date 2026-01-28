@@ -1,0 +1,14 @@
+.card {
+    width: calc((33% - 2rem));
+
+}
+
+div img {
+    width: 100%;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
